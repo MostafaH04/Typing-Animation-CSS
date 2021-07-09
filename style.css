@@ -1,0 +1,64 @@
+* {
+    background-color: rgb(25,25,25);
+    color: white;
+    font-family: Montserrat;
+    font-size: 30px;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top:50%;
+    left:0;
+    margin-left: 200px;
+    width: 50%;
+    height: 100px;
+    overflow-y: hidden;
+    
+}
+
+.int {
+    position: absolute;
+    font-weight: 600;
+    padding-right: 10px;
+    width: 200px;
+}
+
+@keyframes move {
+    0% {top:0%}
+    25% {top:-97px}
+    50% {top:-194px}
+    75% {top: -291px}
+    100% {top:-388px}
+    
+}
+
+@keyframes type{
+    from {left: -30%;}
+    to {left: 0%}
+}
+
+.main .st{
+    left:125px;
+    position: absolute;
+    animation: move 10s infinite;
+    animation-timing-function: step-end; 
+}
+
+.main .st p{
+    position: relative;
+
+}
+
+.wow {
+    display: flex;
+}
+
+.mov {
+    position: relative;
+    width:200px;
+    animation: type 2.5s infinite;
+}
+
